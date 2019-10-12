@@ -1,0 +1,91 @@
+.left {
+  float: left;
+}
+
+.right {
+  float: right
+}
+
+.readStatus {
+  float: right;
+  font-size: 12px;
+}
+
+.right .readStatus {
+  float: left;
+  margin-left: 0;
+}
+
+.voice {
+  cursor: pointer;
+  padding: 10px;
+  background: #eee;
+  min-width: 120px;
+  float: left;
+  border-radius: 5px;
+}
+
+.right .voice {
+  float: right;
+}
+
+.voice:active {
+  background-color: #ccc;
+}
+
+:global {
+  .ant-card-bordered {
+    border: none;
+  }
+
+  .ant-card-body {
+    padding: 5px;
+  }
+
+  .ant-card {
+    max-width: 600px;
+    margin-bottom: 10px;
+  }
+
+  .ant-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+  }
+
+  .ant-card-meta-detail {
+    font-size: 16px;
+    // border-radius: 5px;
+  }
+
+  .ant-card-meta-description img {
+    cursor: pointer;
+    width: 30%;
+
+  }
+
+  .ant-card-meta-description p {
+    float: left;
+  }
+
+  .ant-card-meta-description img,
+  .ant-card-meta-description p {
+    padding: 10px;
+    background: #eee;
+    border-radius: 5px;
+  }
+}
+
+
+
+.right :global {
+  .ant-card-meta-avatar {
+    padding: 0 0 0 16px;
+    float: right
+  }
+
+  .ant-card-meta-description p,
+  .ant-card-meta-description img {
+    float: right;
+  }
+}
